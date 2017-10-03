@@ -1,0 +1,31 @@
+{
+  "name": "setup-jest-math",
+  "version": "1.0.0",
+  "description": "",
+  "jest": {
+    "testEnvironment": "jest-environment-node",
+    "collectCoverageFrom": [
+      "*.js"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "statements": 50,
+        "branches": 50,
+        "functions": 100
+      }
+    }
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "test:watch": "jest --watchAll"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "jest": "^21.2.1"
+  }
+}
